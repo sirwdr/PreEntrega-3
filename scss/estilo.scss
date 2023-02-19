@@ -52,20 +52,21 @@ h3 {
 
 .input {
     margin: 2px 20px;
-    display: block;
+    display: flex;
 }
 
 .estilo-input {
     margin: 5px 10px;
     border-radius: 10px;
-    width: 400px;
+    width: 60%;
+    height: auto;
     background-color: #dad1e2;
 }
 
 .contenedor-formulario {
-    display:block;
-    width: 700px;
-    height: 450px;
+    display:flexbox;
+    width: 70%;
+    height: auto;
     border: black 1px solid;
     border-radius: 5px;
     margin: 30px auto;
@@ -80,8 +81,8 @@ h3 {
     margin: 5px 10px;
     border-radius: 10px;
     background-color: #dad1e2;
-    width: 400px;
-    height: 200px;
+    width: 60%;
+    height: auto;
     border: black 2px solid;
 }
 
@@ -98,6 +99,10 @@ h3 {
     color: white;
     border: 2px solid black;
     justify-content: flex-end;
+}
+
+.submit {
+    background-color: $colorNav;
 }
 
 @keyframes cambiar{
