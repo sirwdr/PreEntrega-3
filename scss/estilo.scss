@@ -1,14 +1,13 @@
-$letra-titulo: 'Roboto', sans-serif;
-$colorNav:  #ff00ff;
-$fondoLogo: #f5f0f0;
+
+@import "_reset.scss";
+@import "_variables.scss";
+@import "_formulario.scss";
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
+
+
 
 body {
     background-color: #e6a2e6;
@@ -63,29 +62,10 @@ h3 {
     background-color: #dad1e2;
 }
 
-.contenedor-formulario {
-    display:flexbox;
-    width: 70%;
-    height: auto;
-    border: black 1px solid;
-    border-radius: 5px;
-    margin: 30px auto;
-    background: linear-gradient(45deg, red, pink, 
-    fuchsia, black);
-    background-size: 400% 400%;
-    position: relative;
-    animation: cambiar 10s ease-in-out infinite;
-}
 
-.textarea {
-    margin: 5px 10px;
-    border-radius: 10px;
-    background-color: #dad1e2;
-    width: 60%;
-    height: 150px;
-    border: black 2px solid;
-}
 
+
+/*
 .footer {
     display: flex;
     margin-top: 10px;
@@ -100,10 +80,33 @@ h3 {
     border: 2px solid black;
     justify-content: flex-end;
 }
+*/
 
-.submit {
-    background-color: $colorNav;
+
+.container-404{
+    text-align: center;
+    width: 70%;
+    height: auto;
+    max-width: 400px;
+    background: #fff;
+    margin: 200px auto;
+    padding: 20px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    line-height: 1.7;
+    color: #434343;
+    .boton{
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        background: #1a84d3;
+        color: #fff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
 }
+
 
 @keyframes cambiar{
     0%{background-position: 0 50%;}
