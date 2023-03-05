@@ -18,8 +18,8 @@ body {
 }
 
 .nav_logo {
-    display: flex;
-    width: 100%;
+    @include display;
+    @include width;
     height: 150px;
     background-color: $fondoLogo;
 
@@ -33,7 +33,7 @@ body {
 }
 
 .banner {
-    width: 100%;
+    @include width;
     height: 250px;
     border: 1px solid violet;
     margin: auto;
@@ -51,7 +51,7 @@ h3 {
 
 .input {
     margin: 2px 20px;
-    display: flex;
+    @include display;
 }
 
 .estilo-input {
